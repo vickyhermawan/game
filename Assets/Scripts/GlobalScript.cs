@@ -9,19 +9,23 @@ public class GlobalScript : MonoBehaviour
 {
      public static GlobalScript Instance;
      public int score_a;
-     public int nyawa_a = 3; 
+     public int nyawa_a;
      public Text textnyawa;
      public Text textscore_a;
      public Text final_score_text;
-     public int min_life = 0;
-     public GameObject panelGameover;
+     public int min_life;
+     public GameObject panelGameOver;
+     public Text textGameOver;
      public bool isGameOver;
+     public bool isRestart;
+     public Text textRestart;
     
     // Start is called before the first frame update
     void Start()
     {
         Instance = this;
-        textnyawa.text = "life : " + nyawa_a;
+        //textnyawa.text = "life : " + nyawa_a;
+        panelGameOver.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,5 +42,20 @@ public class GlobalScript : MonoBehaviour
     public void Life(){
         nyawa_a --;
         textnyawa.text = "life : " + nyawa_a;
+        if (nyawa_a == min_life)
+        {
+            GameOver();
+        }
+    }
+
+    public void Restart(){
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    void GameOver(){
+        isGameOver = true;
+        textGameOver.text = "GAME OVER";
+        panelGameOver.SetActive(true);
+        Time.timeScale = 0;
     }
 }

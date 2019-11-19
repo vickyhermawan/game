@@ -12,6 +12,8 @@ public class PlayerScript : MonoBehaviour
 
     public static PlayerScript instance;
 
+    public bool alive;
+
      private void Awake()
     {
         if (instance == null) 
@@ -21,7 +23,7 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        alive = true;
     }
 
     // Update is called once per frame
