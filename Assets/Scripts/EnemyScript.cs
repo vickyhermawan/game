@@ -21,7 +21,7 @@ public class EnemyScript : MonoBehaviour
         if(other.transform.tag == "Shoot"){ 
             Instantiate(destructionVFX, transform.position, Quaternion.identity);       
             Destroy(this.gameObject);
-            GlobalScript.Instance.AddScoreA();     
+            GlobalScript.Instance.AddScoreA();
         }
     }
 
