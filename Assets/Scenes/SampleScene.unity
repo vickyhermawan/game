@@ -6012,6 +6012,8 @@ MonoBehaviour:
     wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
   - timeToStart: 4
     wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
+  - timeToStart: 4
+    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
 --- !u!1 &1411979022
 GameObject:
   m_ObjectHideFlags: 0
