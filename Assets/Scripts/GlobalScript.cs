@@ -16,6 +16,7 @@ public class GlobalScript : MonoBehaviour
      public int min_life;
      public GameObject panelGameOver;
      public Text textGameOver;
+     public Text textRestart;
      public bool isGameOver;
     
     // Start is called before the first frame update
