@@ -17,8 +17,6 @@ public class GlobalScript : MonoBehaviour
      public GameObject panelGameOver;
      public Text textGameOver;
      public bool isGameOver;
-     public bool isRestart;
-     public Text textRestart;
     
     // Start is called before the first frame update
     void Start()
@@ -31,7 +29,8 @@ public class GlobalScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         print("Score A = "+score_a);
+         //print("Score A = "+score_a);
+         Restart();
     }
 
     public void AddScoreA(){
@@ -49,7 +48,11 @@ public class GlobalScript : MonoBehaviour
     }
 
     public void Restart(){
-        SceneManager.LoadScene("SampleScene");
+        if (Input.anyKeyDown && isGameOver)
+        {
+            Time.timeScale = 1;
+            SceneManager.LoadSceneAsync("SampleScene");
+        }
     }
 
     void GameOver(){

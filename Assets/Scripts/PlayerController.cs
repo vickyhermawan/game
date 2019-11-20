@@ -2,16 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class Borders
+{
+    public float minXOffset = 1.5f, maxXOffset = 1.5f, minYOffset = 1.5f, maxYOffset = 1.5f;
+
+    public float minX, maxX, minY, maxY;
+}
+
 public class PlayerController : MonoBehaviour
 {
-    
+    public Borders borders;
+    Camera mainCamera;
     public Vector3 playerPost;
     public float speedX;
     public float speedY;
     // Start is called before the first frame update
     void Start()
     {
-    
+        mainCamera = Camera.main;
+        ResizeBorders();
     }
 
     // Update is called once per frame
@@ -33,5 +43,13 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(0,-speedY,0);
         }  
+    }
+
+    void ResizeBorders() 
+    {
+        borders.minX = mainCamera.ViewportToWorldPoint(Vector2.zero).x + borders.minXOffset;
+        borders.minY = mainCamera.ViewportToWorldPoint(Vector2.zero).y + borders.minYOffset;
+        borders.maxX = mainCamera.ViewportToWorldPoint(Vector2.right).x - borders.maxXOffset;
+        borders.maxY = mainCamera.ViewportToWorldPoint(Vector2.up).y - borders.maxYOffset;
     }
 }

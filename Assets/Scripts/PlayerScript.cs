@@ -12,8 +12,6 @@ public class PlayerScript : MonoBehaviour
 
     public static PlayerScript instance;
 
-    public bool alive;
-
      private void Awake()
     {
         if (instance == null) 
@@ -23,23 +21,26 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        alive = true;
+        //alive = true;
+        respawnPlayer();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 
-    public void life(){
-
+    public void respawnPlayer(){
+        pesawat.SetActive(true);
+        transform.position = respawnPoint;
     }
     
      private void OnTriggerEnter2D(Collider2D other){
         if(other.transform.tag == "Enemy"){ 
             Instantiate(destructionFX, transform.position, Quaternion.identity);       
             GlobalScript.Instance.Life();
+            pesawat.SetActive(false);
+            Invoke("respawnPlayer",respawnTime);  // Pakai Invoke untuk memanggil satu method,dengan delay waktu yang ditentukan
         } 
     }
     
