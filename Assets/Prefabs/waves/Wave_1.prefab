@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5413d65982d27b4a8957ed8d9a1c524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 8586021332298104400, guid: 59c4b66e4ce41a7418e29dadd2612c31, type: 3}
+  enemy: {fileID: 2767704747835124061, guid: 66b419f36c337474a859c75cea747f04, type: 3}
   count: 6
   speed: 30
   timeBetween: 0.5
