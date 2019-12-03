@@ -5141,7 +5141,7 @@ MonoBehaviour:
     type: 3}
   hitEffect: {fileID: 0}
   pesawat: {fileID: 286846006}
-  respawnTime: 0
+  respawnTime: 2
   respawnPoint: {x: 0.05, y: -2.96, z: 0}
   alive: 0
 --- !u!61 &286846012
@@ -6088,8 +6088,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyWaves:
   - timeToStart: 0
+<<<<<<< Updated upstream
     wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
   - timeToStart: 4
+=======
+    wave: {fileID: 2827604664749126197, guid: dabe642b083164443b6d4fa2117ec4ac, type: 3}
+  - timeToStart: 8
+    wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
+  - timeToStart: 16
+    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
+  - timeToStart: 24
+    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
+  - timeToStart: 32
+    wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
+  - timeToStart: 40
+>>>>>>> Stashed changes
     wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
   - timeToStart: 4
     wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
