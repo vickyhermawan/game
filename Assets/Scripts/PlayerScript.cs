@@ -48,7 +48,6 @@ public class PlayerScript : MonoBehaviour
             GlobalScript.Instance.Life();
             pesawat.SetActive(false);
             Invoke("respawnPlayer",respawnTime);  // Pakai Invoke untuk memanggil satu method,dengan delay waktu yang ditentukan
-
         } 
     }
     

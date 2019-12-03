@@ -138,10 +138,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5413d65982d27b4a8957ed8d9a1c524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 8586021332298104400, guid: 59c4b66e4ce41a7418e29dadd2612c31, type: 3}
-  count: 10
-  speed: 50
-  timeBetween: 0.3
+  enemy: {fileID: 7446194294040393649, guid: 4d62b859adf207041bda2d30cd329212, type: 3}
+  count: 6
+  speed: 30
+  timeBetween: 0.5
   pathPoints:
   - {fileID: 8065179227356278040}
   - {fileID: 1297209780881960130}

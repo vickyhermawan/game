@@ -121,7 +121,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 13459529}
-  - component: {fileID: 13459530}
   - component: {fileID: 13459531}
   m_Layer: 0
   m_Name: MiddleGround
@@ -145,24 +144,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &13459530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13459528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f510bed2ff9765947bcf08ee1ddc3559, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a,
-    type: 3}
-  spawnTime: 5
-  spawnPosy: -2
-  spawnPosx: 0
-  timer: 1
 --- !u!114 &13459531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,9 +274,8 @@ MonoBehaviour:
   min_life: 0
   panelGameOver: {fileID: 1634380758}
   textGameOver: {fileID: 462239822}
-  isGameOver: 0
-  isRestart: 0
   textRestart: {fileID: 0}
+  isGameOver: 0
 --- !u!4 &131188689
 Transform:
   m_ObjectHideFlags: 0
@@ -5057,6 +5037,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d100936030e0f0644ae49048ae033fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  borders:
+    minXOffset: 1.5
+    maxXOffset: 1.5
+    minYOffset: 1.5
+    maxYOffset: 1.5
+    minX: 0
+    maxX: 0
+    minY: 0
+    maxY: 0
   playerPost: {x: 0, y: 0, z: 0}
   speedX: 0.1
   speedY: 0.1
@@ -5143,7 +5132,6 @@ MonoBehaviour:
   pesawat: {fileID: 286846006}
   respawnTime: 2
   respawnPoint: {x: 0.05, y: -2.96, z: 0}
-  alive: 0
 --- !u!61 &286846012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5582,6 +5570,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d100936030e0f0644ae49048ae033fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  borders:
+    minXOffset: 1.5
+    maxXOffset: 1.5
+    minYOffset: 1.5
+    maxYOffset: 1.5
+    minX: 0
+    maxX: 0
+    minY: 0
+    maxY: 0
   playerPost: {x: 0, y: 0, z: 0}
   speedX: 0.1
   speedY: 0.1
@@ -5670,7 +5667,6 @@ MonoBehaviour:
   pesawat: {fileID: 0}
   respawnTime: 0
   respawnPoint: {x: 0, y: 0, z: 0}
-  alive: 0
 --- !u!1 &1193292504
 GameObject:
   m_ObjectHideFlags: 0
@@ -6088,10 +6084,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyWaves:
   - timeToStart: 0
-<<<<<<< Updated upstream
     wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
   - timeToStart: 4
-=======
     wave: {fileID: 2827604664749126197, guid: dabe642b083164443b6d4fa2117ec4ac, type: 3}
   - timeToStart: 8
     wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
@@ -6102,10 +6096,11 @@ MonoBehaviour:
   - timeToStart: 32
     wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
   - timeToStart: 40
->>>>>>> Stashed changes
     wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
-  - timeToStart: 4
+  - timeToStart: 48
     wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
+  - timeToStart: 56
+    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
 --- !u!1 &1411979022
 GameObject:
   m_ObjectHideFlags: 0

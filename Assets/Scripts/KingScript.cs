@@ -20,7 +20,7 @@ public class KingScript : MonoBehaviour
     }
 
      private void OnTriggerEnter2D(Collider2D other){
-        if(other.transform.tag == "Shoot"){ 
+        if(other.transform.tag == "Shoot"){
             health--;
             if(health == 0){
             Instantiate(destructionVFX, transform.position, Quaternion.identity);       
