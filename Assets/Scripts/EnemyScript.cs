@@ -33,6 +33,7 @@ public class EnemyScript : MonoBehaviour
         if(other.transform.tag == "Shoot"){ 
             Instantiate(destructionVFX, transform.position, Quaternion.identity);       
             Destroy(this.gameObject);
+            SoundEffectManager.Instance.Explotion();
             GlobalScript.Instance.AddScoreA();
         }
     }

@@ -19,10 +19,15 @@ public class ShootScript : MonoBehaviour
     {
         timer -= Time.deltaTime;
         if (timer <= 0)
-        {
+        {   
+            
             GameObject obj = Instantiate(objectToSpawn, this.transform);
             obj.transform.localPosition = new Vector3(0,10,0);
             timer = spawnTime;
+            SoundEffectManager.Instance.Shoot();
+            
         }
     }
+
+     
 }
