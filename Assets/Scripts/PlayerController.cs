@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Borders
 {
-    public float minXOffset = 1.5f, maxXOffset = 1.5f, minYOffset = 1.5f, maxYOffset = 1.5f;
+    public float minXOffset = 1f, maxXOffset = 1f, minYOffset = 1f, maxYOffset = 1f;
 
     public float minX, maxX, minY, maxY;
 }
@@ -27,7 +27,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerPost = transform.position;
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, borders.minX,borders.maxX),
+                                Mathf.Clamp(transform.position.y, borders.minY,borders.maxY), transform.position.z);
       //KONTROL HORIZONTAL
         if (Input.GetAxis("Horizontal") > 0){ //jika pencet kanan atau posiif
             transform.Translate(speedX,0,0);
