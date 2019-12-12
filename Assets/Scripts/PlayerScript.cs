@@ -47,6 +47,7 @@ public class PlayerScript : MonoBehaviour
             Instantiate(destructionFX, transform.position, Quaternion.identity);       
             GlobalScript.Instance.Life();
             pesawat.SetActive(false);
+            SoundEffectManager.Instance.Explotion();
             Invoke("respawnPlayer",respawnTime);  // Pakai Invoke untuk memanggil satu method,dengan delay waktu yang ditentukan
         } 
     }

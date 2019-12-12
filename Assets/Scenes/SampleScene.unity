@@ -5208,8 +5208,8 @@ MonoBehaviour:
   bulletPost: {x: 0, y: 0, z: 0}
   objectToSpawn: {fileID: 1309160150251255763, guid: a236baf7384b37a4c89799a10ab78974,
     type: 3}
-  timer: 0.15
-  spawnTime: 0.15
+  timer: 0.35
+  spawnTime: 0.35
 --- !u!212 &286846010
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6104,6 +6104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216774223}
+  - component: {fileID: 1216774224}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6127,6 +6128,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1216774224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216774222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24ff31e25ce4154ea5212fb47a4fce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 2107403197}
+  isPaused: 1
 --- !u!1 &1228292720
 GameObject:
   m_ObjectHideFlags: 0
@@ -6219,6 +6234,7 @@ RectTransform:
   m_Children:
   - {fileID: 1193292505}
   - {fileID: 1634380759}
+  - {fileID: 2107403198}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6435,24 +6451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyWaves:
-  - timeToStart: 0
+  - timeToStart: 2
     wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
-  - timeToStart: 4
-    wave: {fileID: 2827604664749126197, guid: dabe642b083164443b6d4fa2117ec4ac, type: 3}
-  - timeToStart: 8
-    wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
-  - timeToStart: 16
-    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
-  - timeToStart: 24
-    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
-  - timeToStart: 32
-    wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
-  - timeToStart: 40
-    wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
-  - timeToStart: 48
-    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
-  - timeToStart: 56
-    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
 --- !u!1 &1411979022
 GameObject:
   m_ObjectHideFlags: 0
@@ -6573,11 +6573,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1599851444}
-  - component: {fileID: 1599851446}
-  - component: {fileID: 1599851445}
-  m_Layer: 5
-  m_Name: Text
+  - component: {fileID: 1671854394}
+  - component: {fileID: 1671854393}
+  - component: {fileID: 1671854392}
+  m_Layer: 0
+  m_Name: SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7213,10 +7213,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1268854618, guid: 59c4b66e4ce41a7418e29dadd2612c31, type: 3}
-      propertyPath: objectToSpawn
-      value: 
-      objectReference: {fileID: 286846006}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59c4b66e4ce41a7418e29dadd2612c31, type: 3}
 --- !u!1 &1883931874

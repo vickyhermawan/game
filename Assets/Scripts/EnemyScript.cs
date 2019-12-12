@@ -39,8 +39,7 @@ public class EnemyScript : MonoBehaviour
             Instantiate(destructionVFX, transform.position, Quaternion.identity);       
             Destroy(this.gameObject);
             SoundEffectManager.Instance.Explotion();
-            GlobalScript.Instance.AddScoreA(); 
-            } 
+            GlobalScript.Instance.AddScoreA();
         }
     }
 
