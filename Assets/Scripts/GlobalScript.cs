@@ -28,7 +28,7 @@ public class GlobalScript : MonoBehaviour
         //textnyawa.text = "life : " + nyawa_a;
         panelGameOver.SetActive(false);
         highscore = PlayerPrefs.GetInt("highscore",highscore);
-        textHighscore.text = highscore.ToString();
+        textHighscore.text = "highscore\n"+ highscore;
     }
 
     // Update is called once per frame
