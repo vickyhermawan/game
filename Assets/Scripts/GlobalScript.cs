@@ -9,6 +9,7 @@ public class GlobalScript : MonoBehaviour
 {
      public static GlobalScript Instance;
      public int score_a;
+     public int highscore;
      public int nyawa_a;
      public Text textnyawa;
      public Text textscore_a;
@@ -17,6 +18,7 @@ public class GlobalScript : MonoBehaviour
      public GameObject panelGameOver;
      public Text textGameOver;
      public Text textRestart;
+     public Text textHighscore;
      public bool isGameOver;
     
     // Start is called before the first frame update
@@ -25,11 +27,20 @@ public class GlobalScript : MonoBehaviour
         Instance = this;
         //textnyawa.text = "life : " + nyawa_a;
         panelGameOver.SetActive(false);
+        //highscore = PlayerPrefs.GetInt("highscore",highscore);
+        textHighscore.text = highscore.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (score_a > highscore)
+        {
+            highscore = score_a;
+            textHighscore.text = "highscore\n"+ highscore;
+            PlayerPrefs.SetInt("highscore",highscore);
+        }
+
          //print("Score A = "+score_a);
          Restart();
     }
