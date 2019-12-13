@@ -33,7 +33,10 @@ public class EnemyScript : MonoBehaviour
         if(other.transform.tag == "Shoot"){ 
             Instantiate(destructionVFX, transform.position, Quaternion.identity);       
             Destroy(this.gameObject);
+<<<<<<< HEAD
             SoundEffectManager.Instance.Explotion();
+=======
+>>>>>>> parent of 07b4e64... UIPause dan Enenemy
             GlobalScript.Instance.AddScoreA();
         }
     }
