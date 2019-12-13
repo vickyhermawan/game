@@ -27,7 +27,7 @@ public class GlobalScript : MonoBehaviour
         Instance = this;
         //textnyawa.text = "life : " + nyawa_a;
         panelGameOver.SetActive(false);
-        //highscore = PlayerPrefs.GetInt("highscore",highscore);
+        highscore = PlayerPrefs.GetInt("highscore",highscore);
         textHighscore.text = highscore.ToString();
     }
 
