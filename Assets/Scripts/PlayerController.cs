@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Borders
 {
-    public float minXOffset = 1f, maxXOffset = 1f, minYOffset = 1f, maxYOffset = 1f;
+    public float minXOffset = 0f, maxXOffset = 0f, minYOffset = 0f, maxYOffset = 0f;
 
     public float minX, maxX, minY, maxY;
 }

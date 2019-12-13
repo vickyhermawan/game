@@ -56,10 +56,11 @@ public class GlobalScript : MonoBehaviour
         }
     }
 
-    void GameOver(){
+    public void GameOver(){
+        Time.timeScale = 0;
         isGameOver = true;
         textGameOver.text = "GAME OVER";
         panelGameOver.SetActive(true);
-        Time.timeScale = 0;
+        Debug.Log("Game Over");
     }
 }
