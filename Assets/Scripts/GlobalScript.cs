@@ -9,17 +9,26 @@ public class GlobalScript : MonoBehaviour
 {
      public static GlobalScript Instance;
      public int score_a;
+     public int poinKing;
      public int highscore;
      public int nyawa_a;
      public Text textnyawa;
      public Text textscore_a;
-     public Text final_score_text;
      public int min_life;
      public GameObject panelGameOver;
      public Text textGameOver;
      public Text textRestart;
+     public Text textScoreGameOver;
      public Text textHighscore;
      public bool isGameOver;
+
+     public GameObject panelWin;
+     public string nextLevel;
+     public Text textWin;
+     public Text textLevelCompleted;
+     public Text textWinScore;
+     public Text textWinHighscore;
+     public bool isWin;
     
     // Start is called before the first frame update
     void Start()
@@ -29,6 +38,8 @@ public class GlobalScript : MonoBehaviour
         panelGameOver.SetActive(false);
         highscore = PlayerPrefs.GetInt("highscore",highscore);
         textHighscore.text = "highscore\n"+ highscore;
+        textWinHighscore.text = "highscore\n"+ highscore;
+
     }
 
     // Update is called once per frame
@@ -38,15 +49,24 @@ public class GlobalScript : MonoBehaviour
         {
             highscore = score_a;
             textHighscore.text = "highscore\n"+ highscore;
+            textWinHighscore.text = "highscore\n"+ highscore;
             PlayerPrefs.SetInt("highscore",highscore);
-        }
+        }else
 
+        textScoreGameOver.text = "Your Score\n"+score_a;
+        textWinScore.text = "Your Score\n"+score_a;
          //print("Score A = "+score_a);
-         Restart();
+        Restart();
+        NextLevel();
+
     }
 
     public void AddScoreA(){
         score_a ++;
+        textscore_a.text = "Score : " + score_a;
+    }
+    public void AddScoreKing(){
+        score_a += poinKing;
         textscore_a.text = "Score : " + score_a;
     }
 
@@ -73,5 +93,18 @@ public class GlobalScript : MonoBehaviour
         textGameOver.text = "GAME OVER";
         panelGameOver.SetActive(true);
         Debug.Log("Game Over");
+    }
+
+    public void Win(){
+        panelWin.SetActive(true);
+        isWin = true;
+        Time.timeScale = 0;
+    }
+    public void NextLevel(){
+        if (Input.anyKeyDown && isWin == true)
+        {
+            SceneManager.LoadScene(nextLevel);
+            Time.timeScale = 1;
+        }
     }
 }
