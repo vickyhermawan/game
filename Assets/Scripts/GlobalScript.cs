@@ -83,7 +83,7 @@ public class GlobalScript : MonoBehaviour
         if (Input.anyKeyDown && isGameOver)
         {
             Time.timeScale = 1;
-            SceneManager.LoadSceneAsync("SampleScene");
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

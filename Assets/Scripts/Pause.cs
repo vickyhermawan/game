@@ -58,4 +58,6 @@ public class Pause : MonoBehaviour
         isPaused = false;
         Time.timeScale = 1;
     }
+
+    
 }
