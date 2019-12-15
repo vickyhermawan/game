@@ -22,7 +22,7 @@ public class ShootScript : MonoBehaviour
         {   
             
             GameObject obj = Instantiate(objectToSpawn, this.transform);
-            obj.transform.localPosition = new Vector3(0,10,0);
+            obj.transform.localPosition = new Vector3(bulletPost.x,bulletPost.y,0);
             timer = spawnTime;
             SoundEffectManager.Instance.Shoot();
             

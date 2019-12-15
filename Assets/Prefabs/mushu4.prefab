@@ -116,13 +116,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a309875d41934dc428eb8af2034d5311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 2
   destructionVFX: {fileID: 1280240331523082, guid: 45ae5851ef2832044bba82850372d67b,
     type: 3}
   EnemyShoot: {fileID: 1269873616567845851, guid: 6bf762e9e24bc0047a163c21f1ae0fbd,
     type: 3}
-  shotChance: 100
-  shotTimeMin: 10
-  shotTimeMax: 10
+  hitEffect: {fileID: 1256001557233130, guid: 2dd0bdb7830e6644da169b32252dca96, type: 3}
+  shotChance: 2
+  shotTimeMin: 0
+  shotTimeMax: 1
 --- !u!114 &4806786963777824257
 MonoBehaviour:
   m_ObjectHideFlags: 0
