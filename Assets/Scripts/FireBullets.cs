@@ -6,9 +6,9 @@ public class FireBullets : MonoBehaviour
 {
    
     
-    public int bulletsAmount = 10;
+    public int bulletsAmount;
 
-    public float startAngle = 90f, endAngle = 270f;
+    public float startAngle , endAngle;
 
     private Vector2 bulletMoveDirection;
 

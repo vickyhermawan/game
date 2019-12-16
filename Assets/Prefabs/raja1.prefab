@@ -178,5 +178,5 @@ MonoBehaviour:
   bulletPost: {x: 0, y: -3, z: 0}
   objectToSpawn: {fileID: 1785320814766139588, guid: 595aec5466f73e84ca04ac710e2ecef0,
     type: 3}
-  timer: 0.5
-  spawnTime: 0.5
+  timer: 1
+  spawnTime: 1
