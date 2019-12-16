@@ -7563,7 +7563,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyWaves:
   - timeToStart: 2
-    wave: {fileID: 2827604664749126197, guid: 2cc264f09a6cf964ba0c33d57e484308, type: 3}
+    wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
+  - timeToStart: 5
+    wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
+  - timeToStart: 8
+    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
+  - timeToStart: 11
+    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
+  - timeToStart: 14
+    wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
+  - timeToStart: 17
+    wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
+  - timeToStart: 20
+    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
+  - timeToStart: 23
+    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
+  - timeToStart: 26
+    wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
+  - timeToStart: 29
+    wave: {fileID: 2827604664749126197, guid: d7d7105cf7225f24ba6ef2a1b87df423, type: 3}
+  - timeToStart: 32
+    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
+  - timeToStart: 35
+    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
+  - timeToStart: 38
+    wave: {fileID: 2827604664749126197, guid: d7d7105cf7225f24ba6ef2a1b87df423, type: 3}
 --- !u!1 &1411979022
 GameObject:
   m_ObjectHideFlags: 0
