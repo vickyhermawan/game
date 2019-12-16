@@ -7562,7 +7562,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyWaves:
-  - timeToStart: 2
+  - timeToStart: 3
+    wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
+  - timeToStart: 6
+    wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
+  - timeToStart: 9
+    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
+  - timeToStart: 12
+    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
+  - timeToStart: 15
+    wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
+  - timeToStart: 18
+    wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
+  - timeToStart: 22
     wave: {fileID: 2827604664749126197, guid: dabe642b083164443b6d4fa2117ec4ac, type: 3}
 --- !u!1 &1411979022
 GameObject:

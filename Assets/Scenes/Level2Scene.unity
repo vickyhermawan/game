@@ -5297,7 +5297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3069a0c5f8afcad4bbf6e98066749f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPost: {x: 0, y: 0, z: 0}
+  bulletPost: {x: 0, y: 10, z: 0}
   objectToSpawn: {fileID: 1309160150251255763, guid: a236baf7384b37a4c89799a10ab78974,
     type: 3}
   timer: 0.2
@@ -7562,26 +7562,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyWaves:
-  - timeToStart: 5
-    wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
-  - timeToStart: 10
+  - timeToStart: 3
+    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
+  - timeToStart: 6
+    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
+  - timeToStart: 9
     wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
+  - timeToStart: 12
+    wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
   - timeToStart: 15
-    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
-  - timeToStart: 20
     wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
-  - timeToStart: 25
+  - timeToStart: 18
+    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
+  - timeToStart: 21
+    wave: {fileID: 2827604664749126197, guid: 505d4d88e6eeabd4cb5acfc8ae4ea82e, type: 3}
+  - timeToStart: 24
     wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
+  - timeToStart: 27
+    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
   - timeToStart: 30
-    wave: {fileID: 1579829071626617183, guid: 85b179a2b89380e4994d56f57990c504, type: 3}
-  - timeToStart: 35
-    wave: {fileID: 1756089084656210466, guid: cedff7c29e93bd04db8527e125905ebe, type: 3}
-  - timeToStart: 40
-    wave: {fileID: 2827604664749126197, guid: 0998d77a99ac7094ebba13feb2981e22, type: 3}
-  - timeToStart: 45
-    wave: {fileID: 1947974370059188, guid: dc20b5df8b39e5e44927ca6e59fade4a, type: 3}
-  - timeToStart: 50
-    wave: {fileID: 2827604664749126197, guid: 2cc264f09a6cf964ba0c33d57e484308, type: 3}
+    wave: {fileID: 2827604664749126197, guid: 505d4d88e6eeabd4cb5acfc8ae4ea82e, type: 3}
 --- !u!1 &1411979022
 GameObject:
   m_ObjectHideFlags: 0

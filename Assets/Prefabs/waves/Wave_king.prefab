@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362814180530803088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7574025823464302396}
@@ -77,10 +77,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 2767704747835124061, guid: 66b419f36c337474a859c75cea747f04, type: 3}
   count: 1
-  speed: 25
+  speed: 15
   timeBetween: 0
   pathPoints:
-  - {fileID: 8531640316109644697}
   - {fileID: 7602146652013216817}
   - {fileID: 8531640316109644697}
   - {fileID: 7602146652013216817}
@@ -114,7 +113,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6053506288247121940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7574025823464302396}

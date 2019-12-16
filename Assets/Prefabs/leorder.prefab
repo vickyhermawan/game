@@ -14,6 +14,10 @@ GameObject:
   - component: {fileID: 3131918277376559837}
   - component: {fileID: 5611682746412809953}
   - component: {fileID: 6612140786474888606}
+  - component: {fileID: 3023981289316952397}
+  - component: {fileID: 3679022003868449419}
+  - component: {fileID: 7915210644829786509}
+  - component: {fileID: 5303918952715959901}
   m_Layer: 0
   m_Name: leorder
   m_TagString: Untagged
@@ -162,3 +166,66 @@ MonoBehaviour:
   destructionVFX: {fileID: 1280240331523082, guid: 45ae5851ef2832044bba82850372d67b,
     type: 3}
   health: 50
+--- !u!114 &3023981289316952397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5356130566555357150}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3069a0c5f8afcad4bbf6e98066749f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPost: {x: 2, y: 0, z: 0}
+  objectToSpawn: {fileID: 1785320814766139588, guid: 595aec5466f73e84ca04ac710e2ecef0,
+    type: 3}
+  timer: 0.3
+  spawnTime: 0.3
+--- !u!114 &3679022003868449419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5356130566555357150}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3069a0c5f8afcad4bbf6e98066749f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPost: {x: -2, y: 0, z: 0}
+  objectToSpawn: {fileID: 1785320814766139588, guid: 595aec5466f73e84ca04ac710e2ecef0,
+    type: 3}
+  timer: 0.3
+  spawnTime: 0.3
+--- !u!114 &7915210644829786509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5356130566555357150}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3069a0c5f8afcad4bbf6e98066749f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPost: {x: 0, y: -6, z: 0}
+  objectToSpawn: {fileID: 8426320416502445320, guid: 34247491792eed14a92447b95cb4a228,
+    type: 3}
+  timer: 0.7
+  spawnTime: 0.7
+--- !u!114 &5303918952715959901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5356130566555357150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c346bd897db3d4e4e95c09d5fade37f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

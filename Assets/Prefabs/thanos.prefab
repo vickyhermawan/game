@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 9035750185452988320}
   - component: {fileID: 6203940039926785609}
   - component: {fileID: 8745235987350149148}
+  - component: {fileID: 4993718787107560817}
+  - component: {fileID: 6305310599409428557}
   m_Layer: 0
   m_Name: thanos
   m_TagString: Enemy
@@ -162,3 +164,37 @@ MonoBehaviour:
   destructionVFX: {fileID: 1280240331523082, guid: 45ae5851ef2832044bba82850372d67b,
     type: 3}
   health: 50
+--- !u!114 &4993718787107560817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021917193266714743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3069a0c5f8afcad4bbf6e98066749f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPost: {x: -4, y: 0, z: 0}
+  objectToSpawn: {fileID: 1785320814766139588, guid: 595aec5466f73e84ca04ac710e2ecef0,
+    type: 3}
+  timer: 0.6
+  spawnTime: 0.6
+--- !u!114 &6305310599409428557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021917193266714743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3069a0c5f8afcad4bbf6e98066749f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPost: {x: 4, y: 0, z: 0}
+  objectToSpawn: {fileID: 1785320814766139588, guid: 595aec5466f73e84ca04ac710e2ecef0,
+    type: 3}
+  timer: 0.6
+  spawnTime: 0.6
