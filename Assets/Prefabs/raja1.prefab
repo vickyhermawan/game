@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7360171336864738588}
   - component: {fileID: 5421718969207492198}
   - component: {fileID: 8418625896399050523}
+  - component: {fileID: 1228755310908839002}
   m_Layer: 0
   m_Name: raja1
   m_TagString: Enemy
@@ -93,7 +94,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -161,4 +162,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructionVFX: {fileID: 1280240331523082, guid: 45ae5851ef2832044bba82850372d67b,
     type: 3}
-  health: 5
+  health: 30
+--- !u!114 &1228755310908839002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767704747835124061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3069a0c5f8afcad4bbf6e98066749f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPost: {x: 0, y: -3, z: 0}
+  objectToSpawn: {fileID: 1785320814766139588, guid: 595aec5466f73e84ca04ac710e2ecef0,
+    type: 3}
+  timer: 1
+  spawnTime: 1

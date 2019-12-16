@@ -147,6 +147,7 @@ MonoBehaviour:
     type: 3}
   EnemyShoot: {fileID: 1269873616567845851, guid: 6bf762e9e24bc0047a163c21f1ae0fbd,
     type: 3}
+  hitEffect: {fileID: 1256001557233130, guid: 2dd0bdb7830e6644da169b32252dca96, type: 3}
   shotChance: 2
   shotTimeMin: 0
   shotTimeMax: 2

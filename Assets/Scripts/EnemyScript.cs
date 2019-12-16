@@ -9,6 +9,8 @@ public class EnemyScript : MonoBehaviour
 
     public GameObject EnemyShoot;
 
+    public GameObject hitEffect;
+
     public int shotChance; //probability of 'Enemy's' shooting during tha path
     public float shotTimeMin, shotTimeMax; //max and min time for shooting from the beginning of the path
     // Start is called before the first frame update
@@ -32,14 +34,15 @@ public class EnemyScript : MonoBehaviour
 
      private void OnTriggerEnter2D(Collider2D other){
         if(other.transform.tag == "Shoot"){
-            health--; 
-            Instantiate(destructionVFX, transform.position, Quaternion.identity); 
+            health--;             
             if (health == 0)
             {
             Instantiate(destructionVFX, transform.position, Quaternion.identity);       
             Destroy(this.gameObject);
             SoundEffectManager.Instance.Explotion();
             GlobalScript.Instance.AddScoreA();
+            }else{
+             Instantiate(hitEffect,transform.position,Quaternion.identity,transform);
             }
         }
     }
