@@ -46,6 +46,9 @@ public class MenuScript : MonoBehaviour
             if (index == 0)
             {
                 GoToGamePlay();
+            }else if (index == 1)
+            {
+                GoToSetting();
             }else if (index == 2)
             {
                 QuitGame();
@@ -60,4 +63,13 @@ public class MenuScript : MonoBehaviour
         Application.Quit();
         Debug.Log("Game is Exit");
     }
+
+    public void GoToSetting(){
+         SceneManager.LoadScene("Setting");
+    }
+
+    public void GoToMenuScene(){
+         SceneManager.LoadScene("MenuScene");
+    }
+
 }
