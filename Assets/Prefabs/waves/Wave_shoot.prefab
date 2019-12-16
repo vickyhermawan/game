@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362814180530803088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7574025823464302396}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 7574025823464302396}
   - component: {fileID: 902433740049023337}
   m_Layer: 0
-  m_Name: Wave_king
+  m_Name: Wave_shoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,11 +75,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5413d65982d27b4a8957ed8d9a1c524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 2767704747835124061, guid: 66b419f36c337474a859c75cea747f04, type: 3}
+  enemy: {fileID: 1785320814766139588, guid: 595aec5466f73e84ca04ac710e2ecef0, type: 3}
   count: 1
   speed: 15
   timeBetween: 0
   pathPoints:
+  - {fileID: 7602146652013216817}
+  - {fileID: 8531640316109644697}
+  - {fileID: 8531640316109644697}
+  - {fileID: 7602146652013216817}
+  - {fileID: 8531640316109644697}
   - {fileID: 7602146652013216817}
   - {fileID: 8531640316109644697}
   - {fileID: 7602146652013216817}
@@ -113,7 +118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6053506288247121940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7574025823464302396}
