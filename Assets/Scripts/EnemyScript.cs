@@ -9,7 +9,7 @@ public class EnemyScript : MonoBehaviour
 
     public GameObject EnemyShoot;
 
-    public GameObject hitEffect;
+   
 
     public int shotChance; //probability of 'Enemy's' shooting during tha path
     public float shotTimeMin, shotTimeMax; //max and min time for shooting from the beginning of the path
@@ -41,8 +41,6 @@ public class EnemyScript : MonoBehaviour
             Destroy(this.gameObject);
             SoundEffectManager.Instance.Explotion();
             GlobalScript.Instance.AddScoreA();
-            }else{
-             Instantiate(hitEffect,transform.position,Quaternion.identity,transform);
             }
         }
     }
