@@ -5297,7 +5297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3069a0c5f8afcad4bbf6e98066749f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPost: {x: 0, y: 0, z: 0}
+  bulletPost: {x: 10, y: 0, z: 0}
   objectToSpawn: {fileID: 1309160150251255763, guid: a236baf7384b37a4c89799a10ab78974,
     type: 3}
   timer: 0.2

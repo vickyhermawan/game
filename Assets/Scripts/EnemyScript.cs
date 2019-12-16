@@ -33,6 +33,7 @@ public class EnemyScript : MonoBehaviour
      private void OnTriggerEnter2D(Collider2D other){
         if(other.transform.tag == "Shoot"){
             health--; 
+            Instantiate(destructionVFX, transform.position, Quaternion.identity); 
             if (health == 0)
             {
             Instantiate(destructionVFX, transform.position, Quaternion.identity);       

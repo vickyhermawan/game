@@ -9551,7 +9551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3069a0c5f8afcad4bbf6e98066749f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPost: {x: 0, y: 0, z: 0}
+  bulletPost: {x: 10, y: 0}
   objectToSpawn: {fileID: 1309160150251255763, guid: a236baf7384b37a4c89799a10ab78974,
     type: 3}
   timer: 0.15
@@ -9568,6 +9568,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d100936030e0f0644ae49048ae033fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  borders:
+    minXOffset: 0
+    maxXOffset: 0
+    minYOffset: 0
+    maxYOffset: 0
+    minX: 0
+    maxX: 0
+    minY: 0
+    maxY: 0
   playerPost: {x: 0, y: 0, z: 0}
   speedX: 0.1
   speedY: 0.1
@@ -9633,6 +9642,8 @@ MonoBehaviour:
   destructionFX: {fileID: 1587261729604890, guid: 600ec83cba1cec448bf41a6607229741,
     type: 3}
   hitEffect: {fileID: 0}
+  pesawat: {fileID: 0}
+  respawnTime: 0
   respawnPoint: {x: 0.05, y: -2.96, z: 0}
 --- !u!1 &5112078561819703093
 GameObject:
